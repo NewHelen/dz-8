@@ -2,9 +2,9 @@
 public class Main {
     public static void main(String[] args) {
         //creating student
-        Student student1 = new Student(1,"Thomas","Taylor");
-        Student student2 = new Student(2,"James","Anderson");
-        Student student3 = new Student(1,"Martin","Johnson");
+        Student student1 = new Student(1, "Thomas", "Taylor");
+        Student student2 = new Student(2, "James", "Anderson");
+        Student student3 = new Student(1, "Martin", "Johnson");
 
         //creating group
         StudentsGroup group1 = new StudentsGroup(student1);
@@ -19,16 +19,12 @@ public class Main {
         group1.addTask("Вивчити інтерфейси");
 
         //mark task as completed for particular student
-        group1.markTaskCompleted(student1,"Вивчити інкапсуляцію");
+        group1.markTaskCompleted(student1, "Вивчити інкапсуляцію");
 
         //change headman
         group1.changeHeadmanOfGroup(student2);
 
         //remove student from group
         group1.deleteStudentFromGroup(student3);
-
-
-
-
     }
 }
