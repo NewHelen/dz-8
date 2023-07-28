@@ -1,20 +1,17 @@
 public class Student {
 
-    private int studentId;
+    private static int counter = 0;
+    private int id;
     private String firstName;
     private String lastName;
 
     public int getStudentId() {
-        return studentId;
+        return id;
     }
 
-    public String getFullName() {
-        return  firstName+" "+lastName;
-    }
-
-    Student (int studentId, String firstName, String lastName){
-        this.studentId = studentId;
+    Student(String firstName, String lastName) {
+        this.id = ++counter;
         this.firstName = firstName;
         this.lastName = lastName;
-    };
+    }
 }
